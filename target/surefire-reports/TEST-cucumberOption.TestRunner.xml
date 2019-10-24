@@ -4,9 +4,9 @@
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="13+33"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-13.jdk/Contents/Home/lib"/>
-    <property name="browser" value="firefox"/>
+    <property name="browser" value="chrome"/>
     <property name="url" value="http://demo.guru99.com/v4/"/>
-    <property name="maven.multiModuleProjectDirectory" value="/Users/admin/eclipse-workspace/Cucumber_NgocPhan"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/admin/Documents/cucumber2.0/Cucumber_v2.0"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="java.vendor.url" value="https://java.oracle.com/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -15,7 +15,7 @@
     <property name="user.country" value="VN"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/Users/admin/eclipse-workspace/Cucumber_NgocPhan"/>
+    <property name="user.dir" value="/Users/admin/Documents/cucumber2.0/Cucumber_v2.0"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="java.runtime.version" value="13+33"/>
     <property name="os.arch" value="x86_64"/>
@@ -42,7 +42,7 @@
     <property name="java.class.path" value="/usr/local/Cellar/maven/3.6.2/libexec/boot/plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="13"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dbrowser=firefox -Dversion=0.19.0 -Durl=http://demo.guru99.com/v4/ test verify"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dbrowser=chrome -Dversion=78.0.3904.70 -Durl=http://demo.guru99.com/v4/ test verify"/>
     <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-13.jdk/Contents/Home"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -55,7 +55,7 @@
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="version" value="0.19.0"/>
+    <property name="version" value="78.0.3904.70"/>
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>

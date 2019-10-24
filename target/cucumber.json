@@ -1,0 +1,4363 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 8,
+        "name": "Create account, login and verify login successfully",
+        "description": "",
+        "id": "payment-feature;create-account,-login-and-verify-login-successfully",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9801734497,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I navigate to Guru bank and click Here link",
+            "match": {
+              "location": "LoginSteps.i_navigate_to_Guru_bank_and_click_Here_link()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 244146233,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I input email \"randomEmail\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "randomEmail",
+                  "offset": 15
+                }
+              ],
+              "location": "RegisterSteps.i_input_email(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2227368587,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I click to submit account",
+            "match": {
+              "location": "RegisterSteps.i_click_to_submit_account()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 102270903,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I get email and password",
+            "match": {
+              "location": "RegisterSteps.i_get_email_and_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1762336907,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I navigate to Log In page \"http://demo.guru99.com/v4/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://demo.guru99.com/v4/",
+                  "offset": 27
+                }
+              ],
+              "location": "RegisterSteps.i_navigate_to_Log_In_page(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2893654024,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I log in system",
+            "match": {
+              "location": "LoginSteps.i_log_in_system()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 56925846,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Verify successfully with message Home Page \"Welcome To Manager\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Welcome To Manager",
+                  "offset": 44
+                }
+              ],
+              "location": "HomePageSteps.verify_successfully_with_message(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 7,
+            "name": "@CreateAccountAndLogin"
+          }
+        ]
+      }
+    ],
+    "name": "Payment feature",
+    "description": "  As an automation tester\nI want a payment function \nSo that I want to make sure payment correctly",
+    "id": "payment-feature",
+    "keyword": "Feature",
+    "uri": "Feature_01_LogIn.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@LogInGuruBank"
+      }
+    ]
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 8,
+        "name": "User to navigate to Create customer page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1499627148,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I open New Customer page",
+            "match": {
+              "location": "NewCustomerSteps.i_open_New_Customer_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 12,
+        "name": "Create customer with empty customer name",
+        "description": "",
+        "id": "create-customer;create-customer-with-empty-customer-name",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 108024621,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I input key tab to customer name",
+            "match": {
+              "location": "NewCustomerSteps.i_input_key_tab_to_customer_name()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 30546444,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Verify successfully with message \"Customer name must not be blank\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Customer name must not be blank",
+                  "offset": 34
+                }
+              ],
+              "location": "NewCustomerSteps.verify_successfully_with_message(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 11,
+            "name": "@TC_01_Create_NameCannotEmpty"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "User to navigate to Create customer page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1678778396,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I open New Customer page",
+            "match": {
+              "location": "NewCustomerSteps.i_open_New_Customer_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 25,
+        "name": "Create customer with input numeric value name field",
+        "description": "",
+        "id": "create-customer;create-customer-with-input-numeric-value-name-field;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 141443868,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I input data \"123456\" to customer name",
+            "match": {
+              "arguments": [
+                {
+                  "val": "123456",
+                  "offset": 14
+                }
+              ],
+              "location": "NewCustomerSteps.i_input_data_to_customer_name(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 31510571,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Verify successfully with message \"Numbers are not allowed\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Numbers are not allowed",
+                  "offset": 34
+                }
+              ],
+              "location": "NewCustomerSteps.verify_successfully_with_message(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@CreateCustomer"
+          },
+          {
+            "line": 17,
+            "name": "@TC_02_03_Create_NameCannotBeNumberic"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "User to navigate to Create customer page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1025472021,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I open New Customer page",
+            "match": {
+              "location": "NewCustomerSteps.i_open_New_Customer_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 26,
+        "name": "Create customer with input numeric value name field",
+        "description": "",
+        "id": "create-customer;create-customer-with-input-numeric-value-name-field;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 140206931,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I input data \"name!@#\" to customer name",
+            "match": {
+              "arguments": [
+                {
+                  "val": "name!@#",
+                  "offset": 14
+                }
+              ],
+              "location": "NewCustomerSteps.i_input_data_to_customer_name(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 34943140,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Verify successfully with message \"Special characters are not allowed\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Special characters are not allowed",
+                  "offset": 34
+                }
+              ],
+              "location": "NewCustomerSteps.verify_successfully_with_message(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@CreateCustomer"
+          },
+          {
+            "line": 17,
+            "name": "@TC_02_03_Create_NameCannotBeNumberic"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "User to navigate to Create customer page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1194135115,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I open New Customer page",
+            "match": {
+              "location": "NewCustomerSteps.i_open_New_Customer_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 29,
+        "name": "Create customer with input first character blank space name field",
+        "description": "",
+        "id": "create-customer;create-customer-with-input-first-character-blank-space-name-field",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 100744808,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I input key space to customer name",
+            "match": {
+              "location": "NewCustomerSteps.i_input_key_space_to_customer_name()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 28328090,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "Verify successfully with message \"First character can not have space\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "First character can not have space",
+                  "offset": 34
+                }
+              ],
+              "location": "NewCustomerSteps.verify_successfully_with_message(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 28,
+            "name": "@TC_04_Create_NameCannotFirstCharacterBlankSpace"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "User to navigate to Create customer page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 519644324,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I open New Customer page",
+            "match": {
+              "location": "NewCustomerSteps.i_open_New_Customer_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 35,
+        "name": "Create customer with empty address field",
+        "description": "",
+        "id": "create-customer;create-customer-with-empty-address-field",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 102397434,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "I input key tab to address",
+            "match": {
+              "location": "NewCustomerSteps.i_input_key_tab_to_address()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 31913987,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "Verify successfully with message \"Address Field must not be blank\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Address Field must not be blank",
+                  "offset": 34
+                }
+              ],
+              "location": "NewCustomerSteps.verify_successfully_with_message(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 34,
+            "name": "@TC_05_Create_AddressCannotEmpty"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "User to navigate to Create customer page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1388412906,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I open New Customer page",
+            "match": {
+              "location": "NewCustomerSteps.i_open_New_Customer_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 41,
+        "name": "Create customer with input first character blank space address field",
+        "description": "",
+        "id": "create-customer;create-customer-with-input-first-character-blank-space-address-field",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 98941155,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "I input key space to address",
+            "match": {
+              "location": "NewCustomerSteps.i_input_key_space_to_address()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 26075609,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "Verify successfully with message \"First character can not have space\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "First character can not have space",
+                  "offset": 34
+                }
+              ],
+              "location": "NewCustomerSteps.verify_successfully_with_message(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 40,
+            "name": "@TC_06_Create_AddressCannotFirstCharacterBlankSpace"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "User to navigate to Create customer page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 607425788,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I open New Customer page",
+            "match": {
+              "location": "NewCustomerSteps.i_open_New_Customer_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 47,
+        "name": "Create customer with empty address field",
+        "description": "",
+        "id": "create-customer;create-customer-with-empty-address-field",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 103181145,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "I input key tab to city",
+            "match": {
+              "location": "NewCustomerSteps.i_input_key_tab_to_city()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 34016973,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "Verify successfully with message \"City Field must not be blank\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "City Field must not be blank",
+                  "offset": 34
+                }
+              ],
+              "location": "NewCustomerSteps.verify_successfully_with_message(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 46,
+            "name": "@TC_07_Create_CityCannotEmpty"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "User to navigate to Create customer page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1527688787,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I open New Customer page",
+            "match": {
+              "location": "NewCustomerSteps.i_open_New_Customer_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 60,
+        "name": "Create customer with input numeric value name field",
+        "description": "",
+        "id": "create-customer;create-customer-with-input-numeric-value-name-field;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 126199398,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "I input data \"123456\" to city",
+            "match": {
+              "arguments": [
+                {
+                  "val": "123456",
+                  "offset": 14
+                }
+              ],
+              "location": "NewCustomerSteps.i_input_data_to_city(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 33599010,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "Verify successfully with message \"Numbers are not allowed\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Numbers are not allowed",
+                  "offset": 34
+                }
+              ],
+              "location": "NewCustomerSteps.verify_successfully_with_message(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@CreateCustomer"
+          },
+          {
+            "line": 52,
+            "name": "@TC_08_09_Create_CityCannotBeNumberic"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "User to navigate to Create customer page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 521943255,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I open New Customer page",
+            "match": {
+              "location": "NewCustomerSteps.i_open_New_Customer_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 61,
+        "name": "Create customer with input numeric value name field",
+        "description": "",
+        "id": "create-customer;create-customer-with-input-numeric-value-name-field;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 133935090,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "I input data \"name!@#\" to city",
+            "match": {
+              "arguments": [
+                {
+                  "val": "name!@#",
+                  "offset": 14
+                }
+              ],
+              "location": "NewCustomerSteps.i_input_data_to_city(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 30314653,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "Verify successfully with message \"Special characters are not allowed\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Special characters are not allowed",
+                  "offset": 34
+                }
+              ],
+              "location": "NewCustomerSteps.verify_successfully_with_message(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@CreateCustomer"
+          },
+          {
+            "line": 52,
+            "name": "@TC_08_09_Create_CityCannotBeNumberic"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "User to navigate to Create customer page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1539919764,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I open New Customer page",
+            "match": {
+              "location": "NewCustomerSteps.i_open_New_Customer_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 64,
+        "name": "Create customer with input first character blank space city field",
+        "description": "",
+        "id": "create-customer;create-customer-with-input-first-character-blank-space-city-field",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 100327956,
+              "status": "passed"
+            },
+            "line": 66,
+            "name": "I input key space to city",
+            "match": {
+              "location": "NewCustomerSteps.i_input_key_space_to_city()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 28393591,
+              "status": "passed"
+            },
+            "line": 67,
+            "name": "Verify successfully with message \"First character can not have space\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "First character can not have space",
+                  "offset": 34
+                }
+              ],
+              "location": "NewCustomerSteps.verify_successfully_with_message(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 63,
+            "name": "@TC_10_Create_CityCannotFirstCharacterBlankSpace"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "User to navigate to Create customer page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1042466196,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I open New Customer page",
+            "match": {
+              "location": "NewCustomerSteps.i_open_New_Customer_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 70,
+        "name": "Create customer with empty state field",
+        "description": "",
+        "id": "create-customer;create-customer-with-empty-state-field",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 100955385,
+              "status": "passed"
+            },
+            "line": 72,
+            "name": "I input key tab to state",
+            "match": {
+              "location": "NewCustomerSteps.i_input_key_tab_to_state()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 32226798,
+              "status": "passed"
+            },
+            "line": 73,
+            "name": "Verify successfully with message \"State must not be blank\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "State must not be blank",
+                  "offset": 34
+                }
+              ],
+              "location": "NewCustomerSteps.verify_successfully_with_message(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 69,
+            "name": "@TC_11_Create_StateCannotEmpty"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "User to navigate to Create customer page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1244338447,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I open New Customer page",
+            "match": {
+              "location": "NewCustomerSteps.i_open_New_Customer_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 83,
+        "name": "Create customer with input numeric value name field",
+        "description": "",
+        "id": "create-customer;create-customer-with-input-numeric-value-name-field;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 129774785,
+              "status": "passed"
+            },
+            "line": 78,
+            "name": "I input data \"123456\" to state",
+            "match": {
+              "arguments": [
+                {
+                  "val": "123456",
+                  "offset": 14
+                }
+              ],
+              "location": "NewCustomerSteps.i_input_data_to_state(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 27137355,
+              "status": "passed"
+            },
+            "line": 79,
+            "name": "Verify successfully with message \"Numbers are not allowed\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Numbers are not allowed",
+                  "offset": 34
+                }
+              ],
+              "location": "NewCustomerSteps.verify_successfully_with_message(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 75,
+            "name": "@TC_12_13_Create_StateCannotBeNumberic"
+          },
+          {
+            "line": 2,
+            "name": "@CreateCustomer"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "User to navigate to Create customer page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 539109730,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I open New Customer page",
+            "match": {
+              "location": "NewCustomerSteps.i_open_New_Customer_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 84,
+        "name": "Create customer with input numeric value name field",
+        "description": "",
+        "id": "create-customer;create-customer-with-input-numeric-value-name-field;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 134020063,
+              "status": "passed"
+            },
+            "line": 78,
+            "name": "I input data \"name!@#\" to state",
+            "match": {
+              "arguments": [
+                {
+                  "val": "name!@#",
+                  "offset": 14
+                }
+              ],
+              "location": "NewCustomerSteps.i_input_data_to_state(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 24984616,
+              "status": "passed"
+            },
+            "line": 79,
+            "name": "Verify successfully with message \"Special characters are not allowed\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Special characters are not allowed",
+                  "offset": 34
+                }
+              ],
+              "location": "NewCustomerSteps.verify_successfully_with_message(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 75,
+            "name": "@TC_12_13_Create_StateCannotBeNumberic"
+          },
+          {
+            "line": 2,
+            "name": "@CreateCustomer"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "User to navigate to Create customer page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1786433949,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I open New Customer page",
+            "match": {
+              "location": "NewCustomerSteps.i_open_New_Customer_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 88,
+        "name": "",
+        "description": "Create customer with input first character blank space state field",
+        "id": "create-customer;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 115507030,
+              "status": "passed"
+            },
+            "line": 91,
+            "name": "I input key space to state",
+            "match": {
+              "location": "NewCustomerSteps.i_input_key_space_to_state()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 28040056,
+              "status": "passed"
+            },
+            "line": 92,
+            "name": "Verify successfully with message \"First character can not have space\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "First character can not have space",
+                  "offset": 34
+                }
+              ],
+              "location": "NewCustomerSteps.verify_successfully_with_message(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 87,
+            "name": "@TC_14_Create_StateCannotFirstCharacterBlankSpace"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "User to navigate to Create customer page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2043948716,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I open New Customer page",
+            "match": {
+              "location": "NewCustomerSteps.i_open_New_Customer_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 103,
+        "name": "Create customer with input numeric value name field",
+        "description": "",
+        "id": "create-customer;create-customer-with-input-numeric-value-name-field;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 123130436,
+              "status": "passed"
+            },
+            "line": 98,
+            "name": "I input data \"ABC\" to pin",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ABC",
+                  "offset": 14
+                }
+              ],
+              "location": "NewCustomerSteps.i_input_data_to_pin(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 28304920,
+              "status": "passed"
+            },
+            "line": 99,
+            "name": "Verify successfully with message \"Characters are not allowed\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Characters are not allowed",
+                  "offset": 34
+                }
+              ],
+              "location": "NewCustomerSteps.verify_successfully_with_message(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 95,
+            "name": "@TC_15_17_18_20_Create_StateCannotBeNumberic"
+          },
+          {
+            "line": 2,
+            "name": "@CreateCustomer"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "User to navigate to Create customer page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1206277401,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I open New Customer page",
+            "match": {
+              "location": "NewCustomerSteps.i_open_New_Customer_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 104,
+        "name": "Create customer with input numeric value name field",
+        "description": "",
+        "id": "create-customer;create-customer-with-input-numeric-value-name-field;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 109087002,
+              "status": "passed"
+            },
+            "line": 98,
+            "name": "I input data \"123\" to pin",
+            "match": {
+              "arguments": [
+                {
+                  "val": "123",
+                  "offset": 14
+                }
+              ],
+              "location": "NewCustomerSteps.i_input_data_to_pin(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 30166234,
+              "status": "passed"
+            },
+            "line": 99,
+            "name": "Verify successfully with message \"PIN Code must have 6 Digits\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PIN Code must have 6 Digits",
+                  "offset": 34
+                }
+              ],
+              "location": "NewCustomerSteps.verify_successfully_with_message(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 95,
+            "name": "@TC_15_17_18_20_Create_StateCannotBeNumberic"
+          },
+          {
+            "line": 2,
+            "name": "@CreateCustomer"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "User to navigate to Create customer page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1672144128,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I open New Customer page",
+            "match": {
+              "location": "NewCustomerSteps.i_open_New_Customer_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 105,
+        "name": "Create customer with input numeric value name field",
+        "description": "",
+        "id": "create-customer;create-customer-with-input-numeric-value-name-field;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 127778333,
+              "status": "passed"
+            },
+            "line": 98,
+            "name": "I input data \"name!@\" to pin",
+            "match": {
+              "arguments": [
+                {
+                  "val": "name!@",
+                  "offset": 14
+                }
+              ],
+              "location": "NewCustomerSteps.i_input_data_to_pin(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 28192570,
+              "status": "passed"
+            },
+            "line": 99,
+            "name": "Verify successfully with message \"Special characters are not allowed\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Special characters are not allowed",
+                  "offset": 34
+                }
+              ],
+              "location": "NewCustomerSteps.verify_successfully_with_message(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 95,
+            "name": "@TC_15_17_18_20_Create_StateCannotBeNumberic"
+          },
+          {
+            "line": 2,
+            "name": "@CreateCustomer"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "User to navigate to Create customer page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2078334833,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I open New Customer page",
+            "match": {
+              "location": "NewCustomerSteps.i_open_New_Customer_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 106,
+        "name": "Create customer with input numeric value name field",
+        "description": "",
+        "id": "create-customer;create-customer-with-input-numeric-value-name-field;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 128056838,
+              "status": "passed"
+            },
+            "line": 98,
+            "name": "I input data \"12 345\" to pin",
+            "match": {
+              "arguments": [
+                {
+                  "val": "12 345",
+                  "offset": 14
+                }
+              ],
+              "location": "NewCustomerSteps.i_input_data_to_pin(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 25589479,
+              "status": "passed"
+            },
+            "line": 99,
+            "name": "Verify successfully with message \"Characters are not allowed\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Characters are not allowed",
+                  "offset": 34
+                }
+              ],
+              "location": "NewCustomerSteps.verify_successfully_with_message(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 95,
+            "name": "@TC_15_17_18_20_Create_StateCannotBeNumberic"
+          },
+          {
+            "line": 2,
+            "name": "@CreateCustomer"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "User to navigate to Create customer page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 791779549,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I open New Customer page",
+            "match": {
+              "location": "NewCustomerSteps.i_open_New_Customer_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 110,
+        "name": "Create customer with empty PIN field",
+        "description": "",
+        "id": "create-customer;create-customer-with-empty-pin-field",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 98542770,
+              "status": "passed"
+            },
+            "line": 112,
+            "name": "I input key tab to pin",
+            "match": {
+              "location": "NewCustomerSteps.i_input_key_tab_to_pin()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 28935458,
+              "status": "passed"
+            },
+            "line": 113,
+            "name": "Verify successfully with message \"PIN Code must not be blank\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PIN Code must not be blank",
+                  "offset": 34
+                }
+              ],
+              "location": "NewCustomerSteps.verify_successfully_with_message(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 109,
+            "name": "@TC_16_Create_PinCannotEmpty"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "User to navigate to Create customer page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1108967238,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I open New Customer page",
+            "match": {
+              "location": "NewCustomerSteps.i_open_New_Customer_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 117,
+        "name": "",
+        "description": "Create customer with input first character blank space PIN field",
+        "id": "create-customer;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 96574844,
+              "status": "passed"
+            },
+            "line": 120,
+            "name": "I input key space to pin",
+            "match": {
+              "location": "NewCustomerSteps.i_input_key_space_to_pin()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 24844577,
+              "status": "passed"
+            },
+            "line": 121,
+            "name": "Verify successfully with message \"First character can not have space\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "First character can not have space",
+                  "offset": 34
+                }
+              ],
+              "location": "NewCustomerSteps.verify_successfully_with_message(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 116,
+            "name": "@TC_19_Create_PinCannotFirstCharacterBlankSpace"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "User to navigate to Create customer page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1527267177,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I open New Customer page",
+            "match": {
+              "location": "NewCustomerSteps.i_open_New_Customer_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 125,
+        "name": "Create customer with empty telephone field",
+        "description": "",
+        "id": "create-customer;create-customer-with-empty-telephone-field",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 110286126,
+              "status": "passed"
+            },
+            "line": 127,
+            "name": "I input key tab to phone",
+            "match": {
+              "location": "NewCustomerSteps.i_input_key_tab_to_phone()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 39207865,
+              "status": "passed"
+            },
+            "line": 128,
+            "name": "Verify successfully with message \"Mobile no must not be blank\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Mobile no must not be blank",
+                  "offset": 34
+                }
+              ],
+              "location": "NewCustomerSteps.verify_successfully_with_message(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 124,
+            "name": "@TC_21_Create_TelephoneCannotEmpty"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "User to navigate to Create customer page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 513537769,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I open New Customer page",
+            "match": {
+              "location": "NewCustomerSteps.i_open_New_Customer_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 131,
+        "name": "",
+        "description": "Create customer with input first character blank space telephone field",
+        "id": "create-customer;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 101533015,
+              "status": "passed"
+            },
+            "line": 134,
+            "name": "I input key space to phone",
+            "match": {
+              "location": "NewCustomerSteps.i_input_key_space_to_phone()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 27901622,
+              "status": "passed"
+            },
+            "line": 135,
+            "name": "Verify successfully with message \"First character can not have space\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "First character can not have space",
+                  "offset": 34
+                }
+              ],
+              "location": "NewCustomerSteps.verify_successfully_with_message(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 130,
+            "name": "@TC_22_Create_TelephoneCannotFirstCharacterBlankSpace"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "User to navigate to Create customer page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1127816029,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I open New Customer page",
+            "match": {
+              "location": "NewCustomerSteps.i_open_New_Customer_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 146,
+        "name": "Create customer with input numeric value name field",
+        "description": "",
+        "id": "create-customer;create-customer-with-input-numeric-value-name-field;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 148483445,
+              "status": "passed"
+            },
+            "line": 141,
+            "name": "I input data \"012 11122\" to phone",
+            "match": {
+              "arguments": [
+                {
+                  "val": "012 11122",
+                  "offset": 14
+                }
+              ],
+              "location": "NewCustomerSteps.i_input_data_to_phone(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 31872106,
+              "status": "passed"
+            },
+            "line": 142,
+            "name": "Verify successfully with message \"Characters are not allowed\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Characters are not allowed",
+                  "offset": 34
+                }
+              ],
+              "location": "NewCustomerSteps.verify_successfully_with_message(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 138,
+            "name": "@TC_23_24_Create_StateCannotBeNumberic"
+          },
+          {
+            "line": 2,
+            "name": "@CreateCustomer"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "User to navigate to Create customer page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 515882893,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I open New Customer page",
+            "match": {
+              "location": "NewCustomerSteps.i_open_New_Customer_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 147,
+        "name": "Create customer with input numeric value name field",
+        "description": "",
+        "id": "create-customer;create-customer-with-input-numeric-value-name-field;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 120654148,
+              "status": "passed"
+            },
+            "line": 141,
+            "name": "I input data \"@#98\" to phone",
+            "match": {
+              "arguments": [
+                {
+                  "val": "@#98",
+                  "offset": 14
+                }
+              ],
+              "location": "NewCustomerSteps.i_input_data_to_phone(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 29255108,
+              "status": "passed"
+            },
+            "line": 142,
+            "name": "Verify successfully with message \"Special characters are not allowed\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Special characters are not allowed",
+                  "offset": 34
+                }
+              ],
+              "location": "NewCustomerSteps.verify_successfully_with_message(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 138,
+            "name": "@TC_23_24_Create_StateCannotBeNumberic"
+          },
+          {
+            "line": 2,
+            "name": "@CreateCustomer"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "User to navigate to Create customer page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1561988104,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I open New Customer page",
+            "match": {
+              "location": "NewCustomerSteps.i_open_New_Customer_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 151,
+        "name": "",
+        "description": "Create customer with input first character blank space telephone field",
+        "id": "create-customer;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 122041426,
+              "status": "passed"
+            },
+            "line": 154,
+            "name": "I input key tab to email",
+            "match": {
+              "location": "NewCustomerSteps.i_input_key_tab_to_email()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 30219704,
+              "status": "passed"
+            },
+            "line": 155,
+            "name": "Verify successfully with message \"Email-ID must not be blank\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Email-ID must not be blank",
+                  "offset": 34
+                }
+              ],
+              "location": "NewCustomerSteps.verify_successfully_with_message(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 150,
+            "name": "@TC_25_Create_EmailCannotEmpty"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "User to navigate to Create customer page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1701619231,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I open New Customer page",
+            "match": {
+              "location": "NewCustomerSteps.i_open_New_Customer_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 165,
+        "name": "Create customer with input numeric value name field",
+        "description": "",
+        "id": "create-customer;create-customer-with-input-numeric-value-name-field;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 133826032,
+              "status": "passed"
+            },
+            "line": 160,
+            "name": "I input data \"Guru99@\" to email",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Guru99@",
+                  "offset": 14
+                }
+              ],
+              "location": "NewCustomerSteps.i_input_data_to_email(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 29514518,
+              "status": "passed"
+            },
+            "line": 161,
+            "name": "Verify successfully with message \"Email-ID is not valid\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Email-ID is not valid",
+                  "offset": 34
+                }
+              ],
+              "location": "NewCustomerSteps.verify_successfully_with_message(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 157,
+            "name": "@TC_26_Create_StateCannotBeNumberic"
+          },
+          {
+            "line": 2,
+            "name": "@CreateCustomer"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "User to navigate to Create customer page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1314030463,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I open New Customer page",
+            "match": {
+              "location": "NewCustomerSteps.i_open_New_Customer_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 168,
+        "name": "",
+        "description": "Create customer with input first character blank space PIN field",
+        "id": "create-customer;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 100059215,
+              "status": "passed"
+            },
+            "line": 171,
+            "name": "I input key space to email",
+            "match": {
+              "location": "NewCustomerSteps.i_input_key_space_to_email()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 22801837,
+              "status": "passed"
+            },
+            "line": 172,
+            "name": "Verify successfully with message \"First character can not have space\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "First character can not have space",
+                  "offset": 34
+                }
+              ],
+              "location": "NewCustomerSteps.verify_successfully_with_message(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 167,
+            "name": "@TC_27_Create_EmailCannotHaveBlankSpace"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "User to navigate to Create customer page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 490830626,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I open New Customer page",
+            "match": {
+              "location": "NewCustomerSteps.i_open_New_Customer_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 193,
+        "name": "Create new Customer and get NewCustomerID",
+        "description": "",
+        "id": "create-customer;create-new-customer-and-get-newcustomerid;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 146466430,
+              "status": "passed"
+            },
+            "line": 177,
+            "name": "I input with data \"Neymar Jr\" to customer name",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Neymar Jr",
+                  "offset": 19
+                }
+              ],
+              "location": "NewCustomerSteps.i_input_with_data_to_customer_name(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 138855925,
+              "status": "passed"
+            },
+            "line": 178,
+            "name": "I input with data \"10/10/1993\" to date of birth",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10/10/1993",
+                  "offset": 19
+                }
+              ],
+              "location": "NewCustomerSteps.i_input_with_data_to_date_of_birth(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 101661775,
+              "status": "passed"
+            },
+            "line": 179,
+            "name": "I input with data \"Da nang\" to address",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Da nang",
+                  "offset": 19
+                }
+              ],
+              "location": "NewCustomerSteps.i_input_with_data_to_address(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 111895183,
+              "status": "passed"
+            },
+            "line": 180,
+            "name": "I input with data \"Da nang\" to city",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Da nang",
+                  "offset": 19
+                }
+              ],
+              "location": "NewCustomerSteps.i_input_with_data_to_city(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 94092687,
+              "status": "passed"
+            },
+            "line": 181,
+            "name": "I input with data \"Da nang\" to state",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Da nang",
+                  "offset": 19
+                }
+              ],
+              "location": "NewCustomerSteps.i_input_with_data_to_state(String)"
+            },
+            "matchedColumns": [
+              4
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 90145900,
+              "status": "passed"
+            },
+            "line": 182,
+            "name": "I input with data \"466250\" to pin",
+            "match": {
+              "arguments": [
+                {
+                  "val": "466250",
+                  "offset": 19
+                }
+              ],
+              "location": "NewCustomerSteps.i_input_with_data_to_pin(String)"
+            },
+            "matchedColumns": [
+              5
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 95806303,
+              "status": "passed"
+            },
+            "line": 183,
+            "name": "I input with data \"4555442476\" to phone",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4555442476",
+                  "offset": 19
+                }
+              ],
+              "location": "NewCustomerSteps.i_input_with_data_to_phone(String)"
+            },
+            "matchedColumns": [
+              6
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 180913055,
+              "status": "passed"
+            },
+            "line": 184,
+            "name": "I input with data \"randomEmail\" to email",
+            "match": {
+              "arguments": [
+                {
+                  "val": "randomEmail",
+                  "offset": 19
+                }
+              ],
+              "location": "NewCustomerSteps.i_input_with_data_to_email(String)"
+            },
+            "matchedColumns": [
+              7
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 109356068,
+              "status": "passed"
+            },
+            "line": 185,
+            "name": "I input with data \"1234567890\" to password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1234567890",
+                  "offset": 19
+                }
+              ],
+              "location": "NewCustomerSteps.i_input_with_data_to_password(String)"
+            },
+            "matchedColumns": [
+              8
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1874476153,
+              "status": "passed"
+            },
+            "line": 186,
+            "name": "I click submit button",
+            "match": {
+              "location": "NewCustomerSteps.i_click_submit_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 30554836,
+              "status": "passed"
+            },
+            "line": 187,
+            "name": "Verify successfully with message \"Customer Registered Successfully!!!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Customer Registered Successfully!!!",
+                  "offset": 34
+                }
+              ],
+              "location": "NewCustomerSteps.verify_successfully_with_message(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 51330664,
+              "status": "passed"
+            },
+            "line": 188,
+            "name": "I get text UserID",
+            "match": {
+              "location": "NewCustomerSteps.i_get_text_UserID()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 174,
+            "name": "@TC_28_CreateCustomerSuccessfully"
+          },
+          {
+            "line": 2,
+            "name": "@CreateCustomer"
+          }
+        ]
+      }
+    ],
+    "name": "Create customer",
+    "description": "  As an automation tester\nI want to create new customer\nSo that I want to verify all fields is correct message",
+    "id": "create-customer",
+    "keyword": "Feature",
+    "uri": "Feature_02_CreateNewCustomer.feature",
+    "tags": [
+      {
+        "line": 2,
+        "name": "@CreateCustomer"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 7,
+        "name": "User to navigate to Edit customer page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 875907562,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I open Edit Customer page",
+            "match": {
+              "location": "EditCustomerSteps.i_open_Edit_Customer_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 11,
+        "name": "Edit customer with empty customer id",
+        "description": "",
+        "id": "edit-customer;edit-customer-with-empty-customer-id",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 97528739,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I input key tab to customer id",
+            "match": {
+              "location": "EditCustomerSteps.i_input_key_tab_to_customer_id()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 24904922,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Verify successfully with message Edit Page \"Customer ID is required\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Customer ID is required",
+                  "offset": 44
+                }
+              ],
+              "location": "EditCustomerSteps.verify_successfully_with_message_Edit_Page(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 10,
+            "name": "@TC_01_Edit_NameCannotEmpty"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "User to navigate to Edit customer page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2351351132,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I open Edit Customer page",
+            "match": {
+              "location": "EditCustomerSteps.i_open_Edit_Customer_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 23,
+        "name": "Edit customer with input numeric value name field",
+        "description": "",
+        "id": "edit-customer;edit-customer-with-input-numeric-value-name-field;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 118721998,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I input data \"1236Acc\" to customer id",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1236Acc",
+                  "offset": 14
+                }
+              ],
+              "location": "EditCustomerSteps.i_input_data_to_customer_id(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 29031110,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Verify successfully with message Edit Page \"Characters are not allowed\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Characters are not allowed",
+                  "offset": 44
+                }
+              ],
+              "location": "EditCustomerSteps.verify_successfully_with_message_Edit_Page(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 16,
+            "name": "@TC_02_03_Edit_CustomerIdCannotBeNumberic"
+          },
+          {
+            "line": 1,
+            "name": "@EditCustomer"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "User to navigate to Edit customer page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1700996056,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I open Edit Customer page",
+            "match": {
+              "location": "EditCustomerSteps.i_open_Edit_Customer_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 24,
+        "name": "Edit customer with input numeric value name field",
+        "description": "",
+        "id": "edit-customer;edit-customer-with-input-numeric-value-name-field;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 129419970,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I input data \"name!@#\" to customer id",
+            "match": {
+              "arguments": [
+                {
+                  "val": "name!@#",
+                  "offset": 14
+                }
+              ],
+              "location": "EditCustomerSteps.i_input_data_to_customer_id(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 28520037,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Verify successfully with message Edit Page \"Special characters are not allowed\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Special characters are not allowed",
+                  "offset": 44
+                }
+              ],
+              "location": "EditCustomerSteps.verify_successfully_with_message_Edit_Page(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 16,
+            "name": "@TC_02_03_Edit_CustomerIdCannotBeNumberic"
+          },
+          {
+            "line": 1,
+            "name": "@EditCustomer"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "User to navigate to Edit customer page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1618386562,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I open Edit Customer page",
+            "match": {
+              "location": "EditCustomerSteps.i_open_Edit_Customer_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 28,
+        "name": "Edit customer with input special value customer ID field",
+        "description": "",
+        "id": "edit-customer;edit-customer-with-input-special-value-customer-id-field",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 105968826,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I input customer id",
+            "match": {
+              "location": "EditCustomerSteps.i_input_customer_id()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1207891233,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I click to submit button",
+            "match": {
+              "location": "EditCustomerSteps.i_click_to_submit_button()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 27,
+            "name": "@TC_04_Edit_ValidCustomerId"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "User to navigate to Edit customer page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1160423065,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I open Edit Customer page",
+            "match": {
+              "location": "EditCustomerSteps.i_open_Edit_Customer_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 33,
+        "name": "Edit customer with input special value customer ID field",
+        "description": "",
+        "id": "edit-customer;edit-customer-with-input-special-value-customer-id-field",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 105653970,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I input customer id",
+            "match": {
+              "location": "EditCustomerSteps.i_input_customer_id()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 859426530,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I click to submit button",
+            "match": {
+              "location": "EditCustomerSteps.i_click_to_submit_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 154667023,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "I update key tab to address",
+            "match": {
+              "location": "EditCustomerSteps.i_update_key_tab_to_address()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 26062846,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "Verify successfully with message Edit Page \"Address Field must not be blank\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Address Field must not be blank",
+                  "offset": 44
+                }
+              ],
+              "location": "EditCustomerSteps.verify_successfully_with_message_Edit_Page(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 32,
+            "name": "@TC_08_Edit_AddressCannotEmpty"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "User to navigate to Edit customer page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1359471999,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I open Edit Customer page",
+            "match": {
+              "location": "EditCustomerSteps.i_open_Edit_Customer_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 40,
+        "name": "Edit customer with input special value customer ID field",
+        "description": "",
+        "id": "edit-customer;edit-customer-with-input-special-value-customer-id-field",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 111090572,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "I input customer id",
+            "match": {
+              "location": "EditCustomerSteps.i_input_customer_id()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1041664765,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "I click to submit button",
+            "match": {
+              "location": "EditCustomerSteps.i_click_to_submit_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 141500456,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "I update key tab to city",
+            "match": {
+              "location": "EditCustomerSteps.i_update_key_tab_to_city()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 27135731,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "Verify successfully with message Edit Page \"City Field must not be blank\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "City Field must not be blank",
+                  "offset": 44
+                }
+              ],
+              "location": "EditCustomerSteps.verify_successfully_with_message_Edit_Page(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 39,
+            "name": "@TC_09_Edit_CityCannotEmpty"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "User to navigate to Edit customer page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2163878440,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I open Edit Customer page",
+            "match": {
+              "location": "EditCustomerSteps.i_open_Edit_Customer_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 55,
+        "name": "Edit customer with input numeric value name field",
+        "description": "",
+        "id": "edit-customer;edit-customer-with-input-numeric-value-name-field;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 118547376,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "I input customer id",
+            "match": {
+              "location": "EditCustomerSteps.i_input_customer_id()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1362268389,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "I click to submit button",
+            "match": {
+              "location": "EditCustomerSteps.i_click_to_submit_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 172601770,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "I update data \"123456\" to city",
+            "match": {
+              "arguments": [
+                {
+                  "val": "123456",
+                  "offset": 15
+                }
+              ],
+              "location": "EditCustomerSteps.i_update_data_to_city(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 26477185,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "Verify successfully with message Edit Page \"Numbers are not allowed\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Numbers are not allowed",
+                  "offset": 44
+                }
+              ],
+              "location": "EditCustomerSteps.verify_successfully_with_message_Edit_Page(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 46,
+            "name": "@TC_10_11_Edit_CityCannotBeNumberic"
+          },
+          {
+            "line": 1,
+            "name": "@EditCustomer"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "User to navigate to Edit customer page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1151082579,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I open Edit Customer page",
+            "match": {
+              "location": "EditCustomerSteps.i_open_Edit_Customer_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 56,
+        "name": "Edit customer with input numeric value name field",
+        "description": "",
+        "id": "edit-customer;edit-customer-with-input-numeric-value-name-field;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 102912162,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "I input customer id",
+            "match": {
+              "location": "EditCustomerSteps.i_input_customer_id()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1602319027,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "I click to submit button",
+            "match": {
+              "location": "EditCustomerSteps.i_click_to_submit_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 174855367,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "I update data \"name!@\" to city",
+            "match": {
+              "arguments": [
+                {
+                  "val": "name!@",
+                  "offset": 15
+                }
+              ],
+              "location": "EditCustomerSteps.i_update_data_to_city(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 28015082,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "Verify successfully with message Edit Page \"Special characters are not allowed\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Special characters are not allowed",
+                  "offset": 44
+                }
+              ],
+              "location": "EditCustomerSteps.verify_successfully_with_message_Edit_Page(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 46,
+            "name": "@TC_10_11_Edit_CityCannotBeNumberic"
+          },
+          {
+            "line": 1,
+            "name": "@EditCustomer"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "User to navigate to Edit customer page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1132854582,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I open Edit Customer page",
+            "match": {
+              "location": "EditCustomerSteps.i_open_Edit_Customer_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 60,
+        "name": "Edit customer with input special value customer ID field",
+        "description": "",
+        "id": "edit-customer;edit-customer-with-input-special-value-customer-id-field",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 103940167,
+              "status": "passed"
+            },
+            "line": 61,
+            "name": "I input customer id",
+            "match": {
+              "location": "EditCustomerSteps.i_input_customer_id()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1163865487,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "I click to submit button",
+            "match": {
+              "location": "EditCustomerSteps.i_click_to_submit_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 150523517,
+              "status": "passed"
+            },
+            "line": 63,
+            "name": "I update key tab to state",
+            "match": {
+              "location": "EditCustomerSteps.i_update_key_tab_to_state()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 25824101,
+              "status": "passed"
+            },
+            "line": 64,
+            "name": "Verify successfully with message Edit Page \"State must not be blank\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "State must not be blank",
+                  "offset": 44
+                }
+              ],
+              "location": "EditCustomerSteps.verify_successfully_with_message_Edit_Page(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 59,
+            "name": "@TC_12_Edit_StateCannotEmpty"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "User to navigate to Edit customer page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 735232928,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I open Edit Customer page",
+            "match": {
+              "location": "EditCustomerSteps.i_open_Edit_Customer_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 76,
+        "name": "Edit customer with input numeric value name field",
+        "description": "",
+        "id": "edit-customer;edit-customer-with-input-numeric-value-name-field;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 115447468,
+              "status": "passed"
+            },
+            "line": 69,
+            "name": "I input customer id",
+            "match": {
+              "location": "EditCustomerSteps.i_input_customer_id()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1988299544,
+              "status": "passed"
+            },
+            "line": 70,
+            "name": "I click to submit button",
+            "match": {
+              "location": "EditCustomerSteps.i_click_to_submit_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 170366489,
+              "status": "passed"
+            },
+            "line": 71,
+            "name": "I update data \"123456\" to state",
+            "match": {
+              "arguments": [
+                {
+                  "val": "123456",
+                  "offset": 15
+                }
+              ],
+              "location": "EditCustomerSteps.i_update_data_to_state(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 26703009,
+              "status": "passed"
+            },
+            "line": 72,
+            "name": "Verify successfully with message Edit Page \"Numbers are not allowed\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Numbers are not allowed",
+                  "offset": 44
+                }
+              ],
+              "location": "EditCustomerSteps.verify_successfully_with_message_Edit_Page(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 67,
+            "name": "@TC_13_14_Edit_StateCannotBeNumberic"
+          },
+          {
+            "line": 1,
+            "name": "@EditCustomer"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "User to navigate to Edit customer page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2051069268,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I open Edit Customer page",
+            "match": {
+              "location": "EditCustomerSteps.i_open_Edit_Customer_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 77,
+        "name": "Edit customer with input numeric value name field",
+        "description": "",
+        "id": "edit-customer;edit-customer-with-input-numeric-value-name-field;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 102570872,
+              "status": "passed"
+            },
+            "line": 69,
+            "name": "I input customer id",
+            "match": {
+              "location": "EditCustomerSteps.i_input_customer_id()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1173291561,
+              "status": "passed"
+            },
+            "line": 70,
+            "name": "I click to submit button",
+            "match": {
+              "location": "EditCustomerSteps.i_click_to_submit_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 170268128,
+              "status": "passed"
+            },
+            "line": 71,
+            "name": "I update data \"name!@#\" to state",
+            "match": {
+              "arguments": [
+                {
+                  "val": "name!@#",
+                  "offset": 15
+                }
+              ],
+              "location": "EditCustomerSteps.i_update_data_to_state(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 22631604,
+              "status": "passed"
+            },
+            "line": 72,
+            "name": "Verify successfully with message Edit Page \"Special characters are not allowed\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Special characters are not allowed",
+                  "offset": 44
+                }
+              ],
+              "location": "EditCustomerSteps.verify_successfully_with_message_Edit_Page(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 67,
+            "name": "@TC_13_14_Edit_StateCannotBeNumberic"
+          },
+          {
+            "line": 1,
+            "name": "@EditCustomer"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "User to navigate to Edit customer page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1594027368,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I open Edit Customer page",
+            "match": {
+              "location": "EditCustomerSteps.i_open_Edit_Customer_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 89,
+        "name": "Edit customer with input numeric value name field",
+        "description": "",
+        "id": "edit-customer;edit-customer-with-input-numeric-value-name-field;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 115217192,
+              "status": "passed"
+            },
+            "line": 82,
+            "name": "I input customer id",
+            "match": {
+              "location": "EditCustomerSteps.i_input_customer_id()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4596650969,
+              "status": "passed"
+            },
+            "line": 83,
+            "name": "I click to submit button",
+            "match": {
+              "location": "EditCustomerSteps.i_click_to_submit_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 170857120,
+              "status": "passed"
+            },
+            "line": 84,
+            "name": "I update data \"PIN123\" to pin",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PIN123",
+                  "offset": 15
+                }
+              ],
+              "location": "EditCustomerSteps.i_update_data_to_pin(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 26561980,
+              "status": "passed"
+            },
+            "line": 85,
+            "name": "Verify successfully with message Edit Page \"Characters are not allowed\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Characters are not allowed",
+                  "offset": 44
+                }
+              ],
+              "location": "EditCustomerSteps.verify_successfully_with_message_Edit_Page(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 80,
+            "name": "@TC_15_17_18_Edit_PinMustBeNumeric"
+          },
+          {
+            "line": 1,
+            "name": "@EditCustomer"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "User to navigate to Edit customer page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1261174176,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I open Edit Customer page",
+            "match": {
+              "location": "EditCustomerSteps.i_open_Edit_Customer_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 90,
+        "name": "Edit customer with input numeric value name field",
+        "description": "",
+        "id": "edit-customer;edit-customer-with-input-numeric-value-name-field;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 105425819,
+              "status": "passed"
+            },
+            "line": 82,
+            "name": "I input customer id",
+            "match": {
+              "location": "EditCustomerSteps.i_input_customer_id()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1067093458,
+              "status": "passed"
+            },
+            "line": 83,
+            "name": "I click to submit button",
+            "match": {
+              "location": "EditCustomerSteps.i_click_to_submit_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 165117294,
+              "status": "passed"
+            },
+            "line": 84,
+            "name": "I update data \"123\" to pin",
+            "match": {
+              "arguments": [
+                {
+                  "val": "123",
+                  "offset": 15
+                }
+              ],
+              "location": "EditCustomerSteps.i_update_data_to_pin(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 27147308,
+              "status": "passed"
+            },
+            "line": 85,
+            "name": "Verify successfully with message Edit Page \"PIN Code must have 6 Digits\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PIN Code must have 6 Digits",
+                  "offset": 44
+                }
+              ],
+              "location": "EditCustomerSteps.verify_successfully_with_message_Edit_Page(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 80,
+            "name": "@TC_15_17_18_Edit_PinMustBeNumeric"
+          },
+          {
+            "line": 1,
+            "name": "@EditCustomer"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "User to navigate to Edit customer page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1505698405,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I open Edit Customer page",
+            "match": {
+              "location": "EditCustomerSteps.i_open_Edit_Customer_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 91,
+        "name": "Edit customer with input numeric value name field",
+        "description": "",
+        "id": "edit-customer;edit-customer-with-input-numeric-value-name-field;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 104656764,
+              "status": "passed"
+            },
+            "line": 82,
+            "name": "I input customer id",
+            "match": {
+              "location": "EditCustomerSteps.i_input_customer_id()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1626406002,
+              "status": "passed"
+            },
+            "line": 83,
+            "name": "I click to submit button",
+            "match": {
+              "location": "EditCustomerSteps.i_click_to_submit_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 170788521,
+              "status": "passed"
+            },
+            "line": 84,
+            "name": "I update data \"name!@#\" to pin",
+            "match": {
+              "arguments": [
+                {
+                  "val": "name!@#",
+                  "offset": 15
+                }
+              ],
+              "location": "EditCustomerSteps.i_update_data_to_pin(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 23589441,
+              "status": "passed"
+            },
+            "line": 85,
+            "name": "Verify successfully with message Edit Page \"Special characters are not allowed\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Special characters are not allowed",
+                  "offset": 44
+                }
+              ],
+              "location": "EditCustomerSteps.verify_successfully_with_message_Edit_Page(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 80,
+            "name": "@TC_15_17_18_Edit_PinMustBeNumeric"
+          },
+          {
+            "line": 1,
+            "name": "@EditCustomer"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "User to navigate to Edit customer page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1714179971,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I open Edit Customer page",
+            "match": {
+              "location": "EditCustomerSteps.i_open_Edit_Customer_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 95,
+        "name": "Edit customer with input special value customer ID field",
+        "description": "",
+        "id": "edit-customer;edit-customer-with-input-special-value-customer-id-field",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 105509064,
+              "status": "passed"
+            },
+            "line": 96,
+            "name": "I input customer id",
+            "match": {
+              "location": "EditCustomerSteps.i_input_customer_id()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1495444141,
+              "status": "passed"
+            },
+            "line": 97,
+            "name": "I click to submit button",
+            "match": {
+              "location": "EditCustomerSteps.i_click_to_submit_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 138912275,
+              "status": "passed"
+            },
+            "line": 98,
+            "name": "I update key tab to pin",
+            "match": {
+              "location": "EditCustomerSteps.i_update_key_tab_to_pin()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 24882862,
+              "status": "passed"
+            },
+            "line": 99,
+            "name": "Verify successfully with message Edit Page \"PIN Code must not be blank\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PIN Code must not be blank",
+                  "offset": 44
+                }
+              ],
+              "location": "EditCustomerSteps.verify_successfully_with_message_Edit_Page(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 94,
+            "name": "@TC_16_Edit_PinCannotEmpty"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "User to navigate to Edit customer page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4098234224,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I open Edit Customer page",
+            "match": {
+              "location": "EditCustomerSteps.i_open_Edit_Customer_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 102,
+        "name": "Edit customer with input special value customer ID field",
+        "description": "",
+        "id": "edit-customer;edit-customer-with-input-special-value-customer-id-field",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 122383112,
+              "status": "passed"
+            },
+            "line": 103,
+            "name": "I input customer id",
+            "match": {
+              "location": "EditCustomerSteps.i_input_customer_id()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1227720327,
+              "status": "passed"
+            },
+            "line": 104,
+            "name": "I click to submit button",
+            "match": {
+              "location": "EditCustomerSteps.i_click_to_submit_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 161387622,
+              "status": "passed"
+            },
+            "line": 105,
+            "name": "I update key tab to phone",
+            "match": {
+              "location": "EditCustomerSteps.i_update_key_tab_to_phone()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 26582777,
+              "status": "passed"
+            },
+            "line": 106,
+            "name": "Verify successfully with message Edit Page \"Mobile no must not be blank\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Mobile no must not be blank",
+                  "offset": 44
+                }
+              ],
+              "location": "EditCustomerSteps.verify_successfully_with_message_Edit_Page(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 101,
+            "name": "@TC_19_Edit_TelephoneCannotEmpty"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "User to navigate to Edit customer page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1198068443,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I open Edit Customer page",
+            "match": {
+              "location": "EditCustomerSteps.i_open_Edit_Customer_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 117,
+        "name": "Edit customer with input numeric value name field",
+        "description": "",
+        "id": "edit-customer;edit-customer-with-input-numeric-value-name-field;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 97618100,
+              "status": "passed"
+            },
+            "line": 110,
+            "name": "I input customer id",
+            "match": {
+              "location": "EditCustomerSteps.i_input_customer_id()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 879750512,
+              "status": "passed"
+            },
+            "line": 111,
+            "name": "I click to submit button",
+            "match": {
+              "location": "EditCustomerSteps.i_click_to_submit_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 171561844,
+              "status": "passed"
+            },
+            "line": 112,
+            "name": "I update data \"name!@#\" to phone",
+            "match": {
+              "arguments": [
+                {
+                  "val": "name!@#",
+                  "offset": 15
+                }
+              ],
+              "location": "EditCustomerSteps.i_update_data_to_phone(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 26744358,
+              "status": "passed"
+            },
+            "line": 113,
+            "name": "Verify successfully with message Edit Page \"Special characters are not allowed\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Special characters are not allowed",
+                  "offset": 44
+                }
+              ],
+              "location": "EditCustomerSteps.verify_successfully_with_message_Edit_Page(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 108,
+            "name": "@TC_20_Edit_TelephoneCannotHaveSpecialCharacter"
+          },
+          {
+            "line": 1,
+            "name": "@EditCustomer"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "User to navigate to Edit customer page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1147791706,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I open Edit Customer page",
+            "match": {
+              "location": "EditCustomerSteps.i_open_Edit_Customer_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 121,
+        "name": "Edit customer with input special value customer ID field",
+        "description": "",
+        "id": "edit-customer;edit-customer-with-input-special-value-customer-id-field",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 92320401,
+              "status": "passed"
+            },
+            "line": 122,
+            "name": "I input customer id",
+            "match": {
+              "location": "EditCustomerSteps.i_input_customer_id()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1153695038,
+              "status": "passed"
+            },
+            "line": 123,
+            "name": "I click to submit button",
+            "match": {
+              "location": "EditCustomerSteps.i_click_to_submit_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 153730982,
+              "status": "passed"
+            },
+            "line": 124,
+            "name": "I update key tab to email",
+            "match": {
+              "location": "EditCustomerSteps.i_update_key_tab_to_email()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 32605582,
+              "status": "passed"
+            },
+            "line": 125,
+            "name": "Verify successfully with message Edit Page \"Email-ID must not be blank\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Email-ID must not be blank",
+                  "offset": 44
+                }
+              ],
+              "location": "EditCustomerSteps.verify_successfully_with_message_Edit_Page(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 120,
+            "name": "@TC_21_Edit_EmailCannotEmpty"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "User to navigate to Edit customer page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1397215589,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I open Edit Customer page",
+            "match": {
+              "location": "EditCustomerSteps.i_open_Edit_Customer_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 138,
+        "name": "",
+        "description": "Edit customer with input special value customer ID field",
+        "id": "edit-customer;;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 105369599,
+              "status": "passed"
+            },
+            "line": 131,
+            "name": "I input customer id",
+            "match": {
+              "location": "EditCustomerSteps.i_input_customer_id()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 953933980,
+              "status": "passed"
+            },
+            "line": 132,
+            "name": "I click to submit button",
+            "match": {
+              "location": "EditCustomerSteps.i_click_to_submit_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 156819369,
+              "status": "passed"
+            },
+            "line": 133,
+            "name": "I update data \"Guru99@\" to email",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Guru99@",
+                  "offset": 15
+                }
+              ],
+              "location": "EditCustomerSteps.i_update_data_to_email(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 24662095,
+              "status": "passed"
+            },
+            "line": 134,
+            "name": "Verify successfully with message Edit Page \"Email-ID is not valid\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Email-ID is not valid",
+                  "offset": 44
+                }
+              ],
+              "location": "EditCustomerSteps.verify_successfully_with_message_Edit_Page(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@EditCustomer"
+          },
+          {
+            "line": 127,
+            "name": "@TC_22_Edit_EmailIncorrectFormat"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "User to navigate to Edit customer page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1677618346,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I open Edit Customer page",
+            "match": {
+              "location": "EditCustomerSteps.i_open_Edit_Customer_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 142,
+        "name": "Edit customer with input special value customer ID field",
+        "description": "",
+        "id": "edit-customer;edit-customer-with-input-special-value-customer-id-field",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 110024529,
+              "status": "passed"
+            },
+            "line": 143,
+            "name": "I input customer id",
+            "match": {
+              "location": "EditCustomerSteps.i_input_customer_id()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2430861418,
+              "status": "passed"
+            },
+            "line": 144,
+            "name": "I click to submit button",
+            "match": {
+              "location": "EditCustomerSteps.i_click_to_submit_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 154865119,
+              "status": "passed"
+            },
+            "line": 145,
+            "name": "I update key space to email",
+            "match": {
+              "location": "EditCustomerSteps.i_update_key_space_to_email()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 27344061,
+              "status": "passed"
+            },
+            "line": 146,
+            "name": "Verify successfully with message Edit Page \"First character can not have space\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "First character can not have space",
+                  "offset": 44
+                }
+              ],
+              "location": "EditCustomerSteps.verify_successfully_with_message_Edit_Page(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 98012623,
+              "status": "passed"
+            },
+            "line": 147,
+            "name": "Close browser",
+            "match": {
+              "location": "EditCustomerSteps.quitBrowser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 141,
+            "name": "@TC_23_Edit_EmailCannotHaveBlankSpace"
+          }
+        ]
+      }
+    ],
+    "name": "Edit customer",
+    "description": "  As an automation tester\nI want to edit customer\nSo that I want to verify all fields is correct message",
+    "id": "edit-customer",
+    "keyword": "Feature",
+    "uri": "Feature_03_EditCustomer.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@EditCustomer"
+      }
+    ]
+  }
+]

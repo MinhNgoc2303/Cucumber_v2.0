@@ -19,7 +19,7 @@ public class CommonTestCase {
 
 	public static WebDriver openBrowser() {
 //		String browser = "chrome";
-//		String version= "77.0.3865.90";
+//		String version= "78.0.3904.70";
 //		String url ="http://demo.guru99.com/v4/";
 		
 		String browser = System.getProperty("browser");
